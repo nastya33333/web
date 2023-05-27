@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="styles/task2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Your transport</h1>
+<div class="block">
+    <h1>Tell us about your transport</h1>
+    <form>
+        Name: <input type = "text" name = "firstname" value = "Enter your name"> <br><br>
+        Email: <input type = "email" name = "email" value = "Enter your e-mail"> <br><br>
+        Phone: <input type = "tel" name = "phone" value = "Enter your phone"> <br><br>
+    <form>
+        Enter you gender:
+             Male  <input type = "radio" name = "sex" value = "male" checked>
+             Female  <input type = "radio" name = "sex" value = "female">
+    </form>
+        <br><br>
+    <form>
+        What type of car do you have?
+        <select name="type">
+            <option disabled>Select type</option>
+            <option value="Sedan">Sedan</option>
+            <option selected value="Sports Car">Sports Car</option>
+            <option value="Minivan">Minivan</option>
+            <option value="Hatchback">Hatchback</option>
+            <option value="Crossover">Crossover</option>
+            <option value="Coupe">Coupe</option>
+        </select>
+    </form>
+    <form>
+        <br><br>
+        How many cars do you have in your family?
+        <input type="radio" id="vehicle1" name="vehicle" value="vehicle1">
+        <label for="vehicle1">1</label>
+        <input type="radio" id="vehicle2" name="vehicle" value="vehicle2">
+        <label for="vehicle2">2</label>
+        <input type="radio" id="vehicle3" name="vehicle" value="vehicle3">
+        <label for="vehicle3">3 or more</label>
+    </form>
+        <br><br>
+    <form>
+        How old is your car?
+        <input type="checkbox" id="age1" name="age1" value="age1">
+        <label for="age1">0-2</label>
+        <input type="checkbox" id="age2" name="age2" value="age2">
+        <label for="age2">3-5</label>
+        <input type="checkbox" id="age3" name="age3" value="age3">
+        <label for="age3">6-10</label>
+        <input type="checkbox" id="age4" name="age4" value="age4">
+        <label for="age4">10 or more</label>
+    </form>
+        <br><br>
+    <form>
+        What brand of car do you have?: <input type = "text" name = "brand" value = "Enter the answer here"> <br><br>
+        How satisfied are you with your vehicle?: <input type = "range"  min="1" max="10" name = "lastname"> <br><br>
+        Would you like to change your car? Why?: <input type = "text" name = "change" value = "Enter the answer here"> <br><br>
+        <input type = "submit" name = "submit" value = "SUBMIT">
+    </form>
+</div>
+</body>
+</html>
