@@ -1,0 +1,18 @@
+<meta charset='utf-8'>
+<script>
+let empty = () => {};
+(() => 'foobar')(); 
+alert(empty())
+
+var arr = [];
+for (var i = 0; i<=10; i++) {
+	arr.push(Math.round(Math.random()*40 - 5));
+}
+document.write (arr);
+var sum = arr.reduce((a, b) => a + b);  
+var even = arr.filter(v => v % 2 == 0); 
+var double1 = arr.map(v => v * 2);       
+document.write(`</br>Сумма элементов массива: ${sum} </br>` );
+document.write(`Четные элементы массива: ${even} </br>`);
+document.write(`Умножение элементов массива на 2: ${double1}`)
+</script>
