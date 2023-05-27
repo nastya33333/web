@@ -1,0 +1,31 @@
+<meta charset='utf-8'>
+<script>
+let id = Symbol("id");
+let apiKey = Symbol("apiKey");
+let user_bank = {
+  name: "Джон Смит",
+  age: 30, 
+  email: "johnsmit@gmail.com",
+  phone: "8-911-111-11-11",
+  [id]: 123,
+  [apiKey] : "yvukvi56vukvli4657vjmvl",
+}
+let user_clinic = {
+  name: "Джон Смит",
+  age: 30,
+  bill: 3000,
+  email: "johnsmit@gmail.com",
+  phone: "8-911-111-11-11",
+  [id]: 124
+}
+let user_person = {
+  name: "Джон Смит",
+  age: 30,
+  adress: "2 Chapel Hill Heswall BOURNEMOUTH",
+  email: "johnsmit@gmail.com",
+  phone: "8-911-111-11-11",
+  [id]: 123
+}
+alert(user_bank[apiKey])
+alert(user_clinic[id])
+</script>
