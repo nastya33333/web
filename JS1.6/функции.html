@@ -1,0 +1,38 @@
+<meta charset='utf-8'>
+<script>
+function showMessage() {
+	let message = "Привет, я JavaScript!"; // локальная переменная
+	alert( message );
+}
+showMessage(); // Привет, я JavaScript!
+//alert( message ); // не отрабатывает тк переменная объявлена с помощью let
+
+function chekPalindrom() {
+	const Surname = prompt("Введи свою фамилию:").toLowerCase();
+	
+	let newSurname = "";
+	for (let i = Surname.length - 1; i >= 0; i--) {
+		newSurname += Surname[i];
+	}
+	if (Surname == newSurname) {
+	document.write (Surname + " и " + newSurname + " палиндромы")
+	} else { document.write (Surname + " и " + newSurname + " не палиндромы")}
+}
+chekPalindrom()
+
+function getSquares() {
+	let arr = [];
+	for (let i = 0; i<=50; i++) {
+		arr.push(Math.round(Math.random()*100 - 50));
+	}
+	document.write(`<br/> Массив чисел в диапазоне [-50 ; 50]: ${arr} <br/>`);
+	for (i = 0; i< arr.length ; i++) {
+		if (arr[i] < 0) { 
+		arr[i] = Math.pow(arr[i], 2);
+		}
+	}
+document.write(`Замена отриц. чисел на  их  квадраты: ${arr} <br/>`); 
+}
+
+gerSquares();
+</script>
