@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hello React</title>
+</head>
+<body>
+    <div id="app"></div> 
+	<div id="app1"></div> 
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+	//function ProfilePage(props) {
+	//const showMessage = () => {
+    //alert('Followed ' + props.user);
+	//};
+
+	//const handleClick = () => {
+    //setTimeout(showMessage, 3000);
+    //};
+
+    //return (
+    //<button onClick={handleClick}>Follow</button>
+    //);
+    //}
+	class ProfilePage extends React.Component {
+	showMessage = () => {
+    alert('Followed ' + this.props.user);
+	};
+
+	handleClick = () => {
+    setTimeout(this.showMessage, 3000);
+	};
+
+	render() {
+    return <button onClick={this.handleClick}>Follow</button>;
+	}
+	}
+	ReactDOM.createRoot(
+        document.getElementById("app")
+    )
+    .render(
+        <ProfilePage />
+    );
+    </script>
+	<script type="text/babel">
+	class Comment extends React.Component {
+	render() {
+		return (
+			<div className="Comment">
+				<div className="UserInfo">
+					<img className="Avatar"
+						src={this.props.author.avatarUr1}
+						alt={this.props.author.name}
+					/>
+					<div className="UserInfo-name">
+						{this.props.author.name}
+					</div>
+				</div>
+				<div className="Comment-text">
+					{this.props.text}
+				</div>
+				<div className="Comment-date">
+					{formatDate(this.props.date)}
+				</div>
+			</div>
+	}
+	}
+	ReactDOM.createRoot(
+        document.getElementById("app1")
+    )
+    .render(
+        <Comment />
+    );		
+    </script>
+</body>
+</html>
