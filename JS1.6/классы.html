@@ -1,0 +1,41 @@
+<meta charset='utf-8'>
+<script>
+class User {
+	constructor(name) {
+		this.name = name;
+	}
+	sayHi() {
+		alert(this.name);
+	}
+}
+let user = new User("Иван");
+user.sayHi();
+
+class User_1 {
+	constructor(name) {
+		this.name = name;
+	}
+	sayHi() {
+		let message = "Привет, " + this.name;
+		alert(message);
+	}
+}
+let user1 = new User_1("Вася");
+user1.sayHi();
+
+class GetPalindrom {
+	constructor(name) {
+		this.name = name;
+	}
+	getPalindrom() {
+		const yourName = this.name.toLowerCase();
+		let newName = "";
+		for (let i = yourName.length - 1; i >= 0; i--) {
+			newName += yourName[i];
+		}
+	document.write(newName);
+	}
+}
+let user2 = new GetPalindrom("Анастасия");
+user2.getPalindrom();
+</script>
