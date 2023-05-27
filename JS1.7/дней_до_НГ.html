@@ -1,0 +1,11 @@
+<meta charset='utf-8'>
+<script>
+const daysLeftNewYear = () => {  
+  today = new Date()
+  nextDate = new Date("December 31, 2023")
+  msPerDay = 24*60*60*1000;  
+  daysLeft = Math.round((nextDate.getTime() - today.getTime())/msPerDay);
+	document.write(daysLeft)
+  }
+daysLeftNewYear()
+</script>
