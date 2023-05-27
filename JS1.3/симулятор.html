@@ -1,0 +1,11 @@
+<meta charset='utf-8'>
+<script>
+var arr = [0, 1, 2];
+count = 0;
+for (var i = 0; i < 1000000; i++) {
+	if (arr[Math.floor(Math.random()*arr.length)] == arr[0]) {
+	count += 1;
+	}
+}	
+document.write(`Красных: ${count} `); 
+</script>
