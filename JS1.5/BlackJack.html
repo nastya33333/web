@@ -1,0 +1,90 @@
+<meta charset='utf-8'>
+<script>
+alert(`Начнем игру в Black Jack!`);
+// функция для выбора случайного индекса массива в getCard
+function getRandomInt(min,max){
+	return Math.floor(Math.random()*(max-min+1)) + min;    
+}
+// функция для выбора случайной карты
+function getCard(){
+	var cards = ["6","7","8","9","10","J","Q","K","A"];
+	return cards[getRandomInt(0,cards.length-1)];
+}
+// функция для подсчёта суммы карт на руках
+function getSum(hand){
+	var sum = 0;
+// сначала считаем все карты,кроме тузов
+	for (var i=0;i<hand.length;i++){
+	var card = hand[i];
+		if (card!="A"){
+			if (card =="J" || card == "Q" || card == "K"){
+				sum = sum +10;
+			} else { sum = sum + parseInt(card); }
+		}   
+	}
+// туз считается равной 1,если текущая сумма больше 10,иначе равной 11  
+	for(var i=0;i<hand.length;i++ ){
+    var card = hand[i];
+		if (card == "A"){
+			if (sum>10){
+			sum = sum + 1;
+			} else { sum = sum +11;}
+		}   
+	}   
+return sum;
+}
+// описываем набор карт дилера и игрока
+var dealer = [getCard()];
+var player = [getCard(),getCard()];
+
+// функция для подсчёта текущего состояния очков дилера и игрока
+function getstatus(){
+    return  `Диллер: ${dealer.join(' ')} \nИгрок: ${player.join(' ')}`;
+}
+// проверка на Блек Джек игрока
+if (getSum(player) == 21) {
+    alert(`Black Jack! \nПоздравляем!`);
+} else {
+	var answer = "";
+	do {
+     answer = prompt(`${getstatus()} \nХотите ли вы играть дальше? 1 - да, 2 - нет `);
+// сдаём карту игроку
+     if(answer == "1"){
+		player.push(getCard());
+// проверяем нет ли перебора или блек джека
+		if(getSum(player) > 21) {
+			alert(`Перебор у игрока! \n${getstatus()} `);
+			break;
+		} else if (getSum(player) == 21){
+			alert(`Black Jack! \nПоздравляем!`);
+			break;
+		}
+    }
+// игрок закончил брать карты
+    else{
+        // теперь карты берет дилер
+        while(getSum(dealer)<17){
+            dealer.push(getCard());
+        }
+            if (getSum(dealer)>21){
+                alert(`Перебор у Диллера \nВы победили! \n${getstatus()}`);
+            } else if(getSum(dealer)==21){
+                alert(`Black Jack у Диллера \nВы проиграли( \n${getstatus()}`);
+            } else if (getSum(player)==getSum(dealer)){
+                alert(`Ничья \n${getstatus()}`);
+            }
+            else if(getSum(dealer)>getSum(player)){
+
+                alert(`Вы проиграли( \n${getstatus()}`);
+            } else{
+                alert(`Вы выиграли! \n${getstatus()}`);
+            }
+        }
+     alert(getstatus());
+    } while ( answer == 1);
+    }
+
+alert(`Карты диллера: ${dealer.join(' ')} \nКарты игрока: ${player.join(' ')}`);
+alert(`Сумма карт игрока: ${getSum(player)}`);
+
+</script>
