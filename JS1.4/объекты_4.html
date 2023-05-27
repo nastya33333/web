@@ -1,0 +1,17 @@
+<meta charset='utf-8'>
+<script>
+function Student(firstName, lastName, dob, group) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.dob = new Date(dob); 
+	this.group = group;
+    this.sayHi = function() {
+    alert( "Меня зовут: " + this.firstName );
+  };
+}
+let student = new Student("Иван", "Иванов", "7-8-99", "ЗБ-ПИ20-1");
+student.sayHi(); 
+document.write(`Имя: ${student.firstName} <br/> Фамилия: ${student.lastName} <br/> Дата рождения: ${student.dob} <br/> Группа: ${student.group} <br/>`); 
+
+
+</script>
