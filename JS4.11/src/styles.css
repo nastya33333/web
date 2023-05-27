@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.App1 {
+  font-family: sans-serif;
+  font-variant-ligatures: common-ligatures; 
+  text-align: center;          
+}
+.App2 {
+  font-variant: small-caps;
+  text-align: center;          
+}
+body {
+  background-color: #f7edff;
+  color: #4f4f4f;
+}
+h1 {
+  color: #431b61;
+}
+h2 {
+  text-align: right;
+  color: #9752cc;
+  font-size: 15px;
+}
+p {
+  text-align: left;
+}
