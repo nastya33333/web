@@ -1,0 +1,15 @@
+<meta charset='utf-8'>
+<script>
+var RightAnswer = 0;
+var Question1 = prompt("Сколько лап у кошек?:");
+let QA1 = (Question1 === "4" || Question1 === "Четыре" || Question1 === "четыре") ?
+  () => { alert('Верно'); RightAnswer++;} :
+  () => alert("Неверно");
+QA1(); 
+var Question2 = prompt("Как называется самая высокая гора в мире?:");
+let QA2 = (Question2 === "Эверест" || Question2 === "эверест" || Question2 === "Джомолунгма") ?
+  () => { alert('Верно'); RightAnswer++;} :
+  () => alert("Неверно");
+QA2();
+alert("Правильных ответов: " + RightAnswer)
+</script>
