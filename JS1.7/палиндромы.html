@@ -1,0 +1,13 @@
+<meta charset='utf-8'>
+<script>
+const Surname = prompt("Введи свою фамилию:").toLowerCase();
+	
+	let newSurname = "";
+	for (let i = Surname.length - 1; i >= 0; i--) {
+		newSurname += Surname[i];
+	}
+let test = (Surname == newSurname) ?
+	() => alert (Surname + " и " + newSurname + " палиндромы"):
+	() => alert (Surname + " и " + newSurname + " не палиндромы");
+test()
+</script>
