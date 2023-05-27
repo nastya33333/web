@@ -1,0 +1,16 @@
+import "./styles.css";
+
+export default function App1() {
+  return (
+    <div className="App1">
+      <h1>Welcome to Scotland!</h1>
+      <h2>Travelling around Britain: Welcome to Scotland!</h2>
+      <p>Scotland is the perfect region of Britain to have a memorable travelling time. There are numerous places and spots in Scotland to visit. All of them are beautiful. One can see the Scottish peculiar character in every inch of the country's land. If you are dreaming about the best cities and towns of Scotland to go to, here i the selection of the tourists' favourites.</p>
+      <p>Edinburgh and the Lothian Region — This area includes not only the country's capital but also West Lothian, most of Midlothian, and East Lothian. Half medieval and half Georgian, Edinburgh is at its liveliest every August at the International Arts Festival. You can visit Edinburgh Castle and Holyroodhouse and walk the Royal Mile year-round. This is one of Europe's most beautiful capitals. In 3 days you can do it royally, taking in the highlights of the Old Town and the New Town. They include some of the country's major museums. Edinburgh is surrounded by the major attractions of the Lothian region, which can be visited on day trip</p>
+      <p>Glasgow — We recommend that you spend at least 2 days in "the greatest surviving example of a Victorian city." Of course, part of the fun of going to Glasgow is enjoying meet Glaswegians. But there are plenty of museums and galleries, too. You can visit the Burrell Collection, a wealthy ship owner's gift of more than 8.000 items from the ancient world to the modern; the Hunterian Art Gallery with its array of masterpieces by everybody from Rembrandt to Whistler; and the Art Gallery and Museum at Kelvingrove, the home of Britain's finest civic collection of British and European paintings.</p>
+      <p>Fife - The "kingdom" of Fife is one of the most history-rich parts of Scotland, Its most enchanting stretch is a series of villages called East Neuk. Opening onto the North Sea, St. Andrews, the "Oxford of Scotland," is the capital of golf and boasts many great courses. The area is rich in castles and abbeys, notably Dunfermline Abbey, burial place of 22 royal personages, and Falkland Palace and Gardens, where Mary Queen of Scots came for hunting and hawking.</p>
+      <p>Aberdeen and the Tayside — Carved from the old counties of Perth and Angus, Tayside takes its name from its major river, the Tay, running for 192km. Major centres are Perth, former capital of Scotland, standing where the Highlands meet the Lowlands. The area abounds in castles and palaces, including Glamis, linked to British royalty for 10 centuries, and Scone, an art-filled palace from 1580. The great city of the north, Aberdeen is called Scotland's "granite city" and ranks third in population. It's the best centre for touring "castle country" Braemar is known for its scenery as well as for being the site of every summer's Royal Highland Gathering, and Balmoral Castle at Ballater was the "beloved paradise" of Queen Victoria and still is a home to the royal family.</p>
+      <p>Finally, you can follow the Whisky Trail to check out some of Scotland's most famous distilleries.</p>
+    </div>
+  );
+}
