@@ -1,0 +1,37 @@
+<meta charset='utf-8'>
+<script>
+let users = {
+  name: "Джон Смит",
+  age: 30, 
+  email: "johnsmit@gmail.com",
+  phone: "8-911-111-11-11",
+  cityNY: true,
+  likedMeat: false,
+}
+let orders = {
+  date: "08-04-2023",
+  QTY: 26, 
+  BY: "Jonh Smit",
+  summa: 1350,
+  delivery: true,
+  promo: false,
+}
+let restorants = {
+  name: "Apres Ski",
+  averageBill: 3000, 
+  adress: "2 Chapel Hill Heswall BOURNEMOUTH",
+  email: "johnsmit@gmail.com",
+  phone: "8-911-111-11-11",
+  vegan: true,
+}
+if (orders.QTY > 25) {
+document.write(`Покупатель ${orders.BY} заказал ${orders.QTY} позиций на сумму ${orders.summa}, заказ был сделан ${orders.date} <br/>`)
+} else { document.write(`Заказ меньше 25 позиций <br/>`) };
+if (users.cityNY === true) {
+document.write(`Пользователь ${users.name}: <br/> Возраст: ${users.age} лет <br/> Email: ${users.email} <br/> Телефон: ${users.phone} <br/>`)
+} else { document.write(`Пользователь не проживает в New York <br/>`) };
+if (restorants.vegan = true) {
+document.write(`Ресторан ${restorants.name} по адресу ${restorants.adress} подходит для веганов, средний чек ${restorants.averageBill} рублей<br/>`)
+} else { document.write(`Ресторан ${restorants.name} возможно не подходит для веганов, уточните по телефону ${restorants.phone} или по почте ${restorants.email} <br/>`) };
+</script>
+
