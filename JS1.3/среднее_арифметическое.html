@@ -1,0 +1,17 @@
+<meta charset='utf-8'>
+<script>
+var arr = [];
+var sum = 0;
+var count = 0;
+for (var i = 0; i<=14; i++) {
+	arr.push(Math.round(Math.random()*40 - 10));
+}
+for (i = 0; i< arr.length ; i++) {
+	if (arr[i] > 0) { 
+	sum += arr[i]; 
+	count += 1;
+	}
+}
+average = Math.round(sum/count);
+document.write(`Массив чисел в диапазоне от -10 до 30: ${arr} <br/> Среднее арифметическое положительный чисел массива: ${average}`); 
+</script>
