@@ -1,0 +1,72 @@
+.filters {
+  border: none;
+  float: left;
+  margin: 10px;
+  height: 2700px;
+  width: 250px;
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+.price-input {
+  width: 70px;
+  height: 25px;
+}
+
+.size {
+  display: block;
+  width: 70px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+.good {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  margin: 10px;
+  float: left;
+  text-align: center;
+  height: 500px;
+  width: 320px;
+  margin-top: 30px;
+  padding-top: 15px;
+}
+.good img {
+  width: 260px;
+  height: 310px;
+  margin-top: 10px;
+  margin: 10px;
+}
+button {
+  background: #e645ff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  height: 45px;
+  width: 130px;
+  font-weight: bold;
+}
+select {
+  background: #f2f2f2;
+  color: black;
+  border: 1px solid #787778;
+  border-radius: 6px;
+  height: 45px;
+  width: 250px;
+  font-weight: bold;
+}
+.price-input {
+  background: #f2f2f2;
+  color: black;
+  border-radius: 6px;
+  border: 1px solid #787778;
+  height: 30px;
+  width: 90px;
+  font-weight: bold;
+}
+a {
+  font-size: 20px;
+}
