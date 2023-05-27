@@ -1,0 +1,11 @@
+<meta charset='utf-8'>
+<script>
+const number = Math.round(Math.random()*60);
+alert(number);
+switch (true) {
+  case (number < 15) : alert( 'Число в первой четверти' ); break;
+  case (number >= 15 && number < 30) : alert( 'Число во второй четверти' ); break;
+  case (number >= 30 && number < 45): alert( 'Чисо в третьей четверти' ); break;
+  default: alert( "Число в четвертой четверти" );
+}
+</script>
